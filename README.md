@@ -34,6 +34,7 @@ NEEDS UPDATES!!!!!!!!
 
 ### run the App will look like this:
 ![run the App will look like this:](https://)
+https://clever-heliotrope-b4533d.netlify.app/
 
 ### something will look like this:
 ![generatedReadme.md file will look like this:](https://)
@@ -43,6 +44,7 @@ NEEDS UPDATES!!!!!!!!
 1. source of code: UofU bootcamp, module 20, activities 16, 23
 2. source of code: chatGPT
 3. source of code: https://getbootstrap.com/docs/5.3/getting-started/introduction/
+4. deploy on Netlify for single-page apps: https://docs.netlify.com/routing/redirects/rewrites-proxies/#history-pushstate-and-single-page-apps
 
 ## License
 ### All assets and code are under the MIT license. Please, check more info in lisence section of this repo.
