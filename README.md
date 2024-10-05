@@ -40,10 +40,9 @@ NEEDS UPDATES!!!!!!!!
 
 
 ## Credits
-1. source of code: UofU bootcamp, module 14, activities 06, 23, 28
-2. source of code: UofU bootcamp, module 13, activity 16
-3. source of code: UofU bootcamp, module 04, activity 19
+1. source of code: UofU bootcamp, module 20, activities 16, 23
 2. source of code: chatGPT
+3. source of code: https://getbootstrap.com/docs/5.3/getting-started/introduction/
 
 ## License
 ### All assets and code are under the MIT license. Please, check more info in lisence section of this repo.
