@@ -1,8 +1,9 @@
-import project01image from '../utils/images/squareExmpl.jpg'
+import project01image from '../utils/images/squareExmpl.jpg';
+import '../App.css';
 
 export default function Portfolio() {
     return (
-      <div>
+      <div class="container text-center mainContainer">
         <h1>My Portfolio</h1>
         <div >
             <div>

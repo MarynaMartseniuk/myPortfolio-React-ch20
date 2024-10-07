@@ -1,8 +1,9 @@
 import myImage from '../utils/images/m2.jpg'
+import '../App.css';
 
 export default function About() {
     return (
-      <div>
+      <div class="container text-center mainContainer">
         <h1>About Me</h1>
         <img src={myImage}/>
         <div >
