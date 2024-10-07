@@ -1,3 +1,4 @@
+import myResume from '../utils/images/resume.jpg';
 import '../App.css';
 
 export default function Resume() {
@@ -7,6 +8,7 @@ export default function Resume() {
 
           <div id="myResume" class="col-4">
             <h1>My Resume</h1>
+            <img src={myResume} width="80%"/>
           </div>
 
           <div id="mySkills" class="col-8">

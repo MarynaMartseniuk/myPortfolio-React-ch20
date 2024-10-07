@@ -1,4 +1,4 @@
-import myImage from '../utils/images/m2.jpg'
+import myImage from '../utils/images/m2.jpg';
 import '../App.css';
 
 export default function About() {
