@@ -14,8 +14,10 @@ function Form() {
     const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
+    console.log('DATA for onChange={handleInputChange}:');
+    console.log(target)
 
-    // Based on the input type, we set the state of either email, username, and password
+    // Based on the input type, we set the state of either email, username, and message
     if (inputType === 'email') {
       setEmail(inputValue);
     } else if (inputType === 'name') {
@@ -25,26 +27,86 @@ function Form() {
     }
   };
 
+  const handleInputEmpty = (e) => {
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    console.log('DATA for onBlur={handleInputEmpty}:');
+    console.log(target);
+    console.log(`inputValue is ${inputValue}`);
+    console.log(inputValue.trim().lenghth, inputValue.trim()==='')
+
+    if (inputType === 'email') {
+      if (inputValue.trim() === '') {
+        setErrorMessage('Please, enter your email!');
+      }
+      return;
+    // } else {
+    //   if (!validateEmail(inputValue)) {
+    //       setErrorMessage('Please, enter a valid email!');
+    //       return;
+    //   };
+    };        
+
+    if (inputType === 'name') {
+      if (inputValue.trim()  === '') {
+        setErrorMessage('Please, enter your name!');
+      }
+      return;
+    };
+
+    if (inputType === 'message') {
+      if (inputValue.trim() === '') {
+        setErrorMessage('Please, enter your message!');
+      }
+      return;
+    };
+
+    // if (!name) {
+    //   setErrorMessage('Please, enter your name!');
+    //   return;
+    // };
+
+    // if (!email) {
+    //     setErrorMessage('Please, enter an email!');
+    //     return;
+    // } else {
+    //     if (!validateEmail(email)) {
+    //         setErrorMessage('Please, enter a valid email!');
+    //         return;
+    //       };
+        
+    // };
+
+    // if (!message) {
+    //     setErrorMessage('Message is required!');
+    //     return;
+    // };
+
+    //setMessage('');
+  };
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    if (!name) {
+    if (!email.trim()) {
+      setErrorMessage('Please, enter an email!');
+      return;
+  } else {
+      if (!validateEmail(email)) {
+          setErrorMessage('Please, enter a valid email!');
+          return;
+        };
+      
+  };
+
+    if (!name.trim()) {
         setErrorMessage('Please, enter your name!');
         return;
     };
 
-    if (!email) {
-        setErrorMessage('Please, enter an email!');
-        return;
-    } else {
-        if (!validateEmail(email)) {
-            setErrorMessage('Please, enter a valid email!');
-            return;
-          };
-        
-    };
-
-    if (!message) {
+    if (!message.trim()) {
         setErrorMessage('Message is required!');
         return;
     };
@@ -56,15 +118,19 @@ function Form() {
     setMessage('');
   };
 
+
+
   return (
     <div className="container text-center">
       <h1>Hello {name}</h1>
-      <h2>If you would like to contact me, please, leave your email and message down below. I will contact you as soon as possible!</h2>
+      <h3>If you would like to contact me, please, fill in the form down below.</h3>
+      <h3>I will contact you as soon as possible!</h3>
       <form className="form" onSubmit={handleFormSubmit}>
         <input
           value={email}
           name="email"
           onChange={handleInputChange}
+          onBlur={handleInputEmpty}
           type="email"
           placeholder="your email"
         />
@@ -72,6 +138,7 @@ function Form() {
           value={name}
           name="name"
           onChange={handleInputChange}
+          onBlur={handleInputEmpty}
           type="text"
           placeholder="your name"
         />
@@ -79,6 +146,7 @@ function Form() {
           value={message}
           name="message"
           onChange={handleInputChange}
+          onBlur={handleInputEmpty}
           type="text"
           placeholder="your message"
         />
