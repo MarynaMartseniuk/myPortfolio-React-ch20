@@ -9,24 +9,32 @@ function NavTabs() {
         <h2>Maryna Martseniuk</h2>
       </div>
     
-      <ul>
-        <li>
-          <Link to="/">
+      <ul className="nav nav-tabs">
+        <li className="nav-item">
+          <Link 
+          to="/"
+          className={currentPage === '/' ? 'nav-link active' : 'nav-link'}>
             About
           </Link>
         </li>
-        <li>
-          <Link to="/Portfolio">
+        <li className="nav-item">
+          <Link 
+          to="/Portfolio"
+          className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}>
             Portfolio
           </Link>
         </li>
-        <li>
-          <Link to="/Contact">
+        <li className="nav-item">
+          <Link 
+          to="/Contact"
+          className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}>
             Contact
           </Link>
         </li>
-        <li>
-          <Link to="/Resume">
+        <li className="nav-item">
+          <Link 
+          to="/Resume"
+          className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}>
             Resume
           </Link>
         </li>
