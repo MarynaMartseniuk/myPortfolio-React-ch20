@@ -4,14 +4,14 @@ import '../App.css';
 
 export default function Resume() {
     return (
-      <div class="container text-center mainContainer">
+      <div className="container text-center pageContainer">
         <div class="row">
 
           <div id="myResume" class="col-4">
-            <a href={ myResumeFile } download>
-              <h1>My Resume</h1>
-            </a>
             <img src={myResume} width="80%"/>
+            <a href={ myResumeFile } download>
+              <h3>download my Resume</h3>
+            </a>
           </div>
 
           <div id="mySkills" class="col-8">

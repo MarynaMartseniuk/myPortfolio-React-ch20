@@ -122,9 +122,7 @@ function Form() {
 
   return (
     <div className="container text-center">
-      <h1>Hello {name}</h1>
-      <h3>If you would like to contact me, please, fill in the form down below.</h3>
-      <h3>I will contact you as soon as possible!</h3>
+      <h1>Hello {name}!</h1>
       <form className="form" onSubmit={handleFormSubmit}>
         <input
           value={email}

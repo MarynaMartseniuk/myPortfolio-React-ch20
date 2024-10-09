@@ -1,5 +1,16 @@
-.mainContainer {
-    width: 100%;
-    border: solid 1px;
+body, html {
+    /* height: 100%; */
     margin: 0;
+}
+
+.mainContainer {
+    /* height: 100%; */
+    width: 100%;
+    background-color: aquamarine;
+    border: solid 1px;
+    margin: 0px !important;
+}
+
+.pageContainer {
+    display: flex;
 }
