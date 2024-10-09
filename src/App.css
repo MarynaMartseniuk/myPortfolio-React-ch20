@@ -1,16 +1,35 @@
+:root {
+    --bg: rgb(236, 226, 189);
+    --dBg: rgb(214, 205, 173);
+    --lBg: rgb(245, 242, 232);
+    --orange: orange;
+    --dBrown: rgb(105, 72, 72);
+    --Grey: rgb(136, 135, 135);
+    --Blue: rgb(60, 147, 247);
+}
+
 body, html {
     /* height: 100%; */
     margin: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    background-color: var(--bg);
+    color: var(--dBrown);
 }
 
 .mainContainer {
-    /* height: 100%; */
-    width: 100%;
-    background-color: aquamarine;
-    border: solid 1px;
+    /* background-color: var(--lGreen); */
+    width: 80%;
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    /* border: solid 1px; */
     margin: 0px !important;
 }
 
 .pageContainer {
     display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
 }
