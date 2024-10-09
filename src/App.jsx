@@ -5,13 +5,13 @@ import './App.css';
 
 function App() {
   return (
-    <>
+    <div className="d-flex flex-column min-vh-100 style={{ margin: 0 }}">
       <NavTabs />
-      <main className="mx-3 mainContainer">
+      <main className="flex-fill mx-3 mainContainer">
         <Outlet />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
 
