@@ -1,7 +1,26 @@
+#footerDiv {
+    font-size: 20px;
+    padding: 30px;
+    background-color: var(--dBg);
+}
+
 #footerContactMe {
-    background-color: rgb(247, 211, 217);
+    display: flex;
+    justify-content:end;
+    align-items: end;
+    font-size: 30px;
 }
 
 #myData {
-    background-color: rgb(173, 173, 248);
+    text-align: left;
+}
+
+#icons {
+    display: flex;
+    justify-content: right;
+}
+
+#LinkedIn, #GitHub {
+    padding: 10px;
+    color: var(--aqua);
 }
