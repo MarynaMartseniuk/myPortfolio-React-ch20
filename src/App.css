@@ -19,7 +19,7 @@ body, html {
 
 .mainContainer {
     /* background-color: var(--lGreen); */
-    width: 80%;
+    width: 90%;
     display: flex;
     align-self: center;
     justify-content: space-around;
