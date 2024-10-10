@@ -39,79 +39,51 @@ function Form() {
 
     if (inputType === 'email') {
       if (inputValue.trim() === '') {
-        setErrorMessage('Please, enter your email!');
+        setErrorMessage('Please, enter your email !');
       }
       return;
-    // } else {
-    //   if (!validateEmail(inputValue)) {
-    //       setErrorMessage('Please, enter a valid email!');
-    //       return;
-    //   };
     };        
 
     if (inputType === 'name') {
       if (inputValue.trim()  === '') {
-        setErrorMessage('Please, enter your name!');
+        setErrorMessage('Please, enter your name !');
       }
       return;
     };
 
     if (inputType === 'message') {
       if (inputValue.trim() === '') {
-        setErrorMessage('Please, enter your message!');
+        setErrorMessage('Please, enter your message !');
       }
       return;
     };
-
-    // if (!name) {
-    //   setErrorMessage('Please, enter your name!');
-    //   return;
-    // };
-
-    // if (!email) {
-    //     setErrorMessage('Please, enter an email!');
-    //     return;
-    // } else {
-    //     if (!validateEmail(email)) {
-    //         setErrorMessage('Please, enter a valid email!');
-    //         return;
-    //       };
-        
-    // };
-
-    // if (!message) {
-    //     setErrorMessage('Message is required!');
-    //     return;
-    // };
-
-    //setMessage('');
   };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
     if (!email.trim()) {
-      setErrorMessage('Please, enter an email!');
+      setErrorMessage('Please, enter an email !');
       return;
   } else {
       if (!validateEmail(email)) {
-          setErrorMessage('Please, enter a valid email!');
+          setErrorMessage('Please, enter a valid email !');
           return;
         };
       
   };
 
     if (!name.trim()) {
-        setErrorMessage('Please, enter your name!');
+        setErrorMessage('Please, enter your name !');
         return;
     };
 
     if (!message.trim()) {
-        setErrorMessage('Message is required!');
+        setErrorMessage('Message is required !');
         return;
     };
 
-    alert(`Dear ${name}, your message has been sent!`);
+    alert(`Dear ${name}, your message has been sent !`);
 
     setName('');
     setEmail('');
@@ -123,36 +95,45 @@ function Form() {
   return (
     <div className="container text-center">
       <h1>Hello {name}!</h1>
-      <form className="form" onSubmit={handleFormSubmit}>
+      <form id="formContainer" className="form" onSubmit={handleFormSubmit}>
+        <lable for="email" className="custom-label">email</lable><br/>
         <input
           value={email}
+          id="email"
           name="email"
           onChange={handleInputChange}
           onBlur={handleInputEmpty}
           type="email"
           placeholder="your email"
         />
+        <lable for="name" className="custom-label">name</lable><br/>
         <input
           value={name}
+          id="name"
           name="name"
           onChange={handleInputChange}
           onBlur={handleInputEmpty}
           type="text"
           placeholder="your name"
         />
+        <lable for="message" className="custom-label">message</lable><br/>
         <input
           value={message}
+          id="message"
           name="message"
           onChange={handleInputChange}
           onBlur={handleInputEmpty}
           type="text"
           placeholder="your message"
         />
-        <button type="submit">Submit</button>
+        <div id="buttonDiv">
+          <button type="submit">Submit</button>
+        </div>
+  
       </form>
       {errorMessage && (
         <div>
-          <p className="error-text">{errorMessage}</p>
+          <div className="error-text errCustom">{errorMessage}</div>
         </div>
       )}
     </div>
