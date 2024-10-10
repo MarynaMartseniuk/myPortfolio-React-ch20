@@ -16,6 +16,11 @@ a {
     color: var(--aqua);
     padding: 20px;
     font-weight: 600;
+    font-style: italic;
+}
+
+.web {
+    font-style: normal;
 }
 
 .image-container {

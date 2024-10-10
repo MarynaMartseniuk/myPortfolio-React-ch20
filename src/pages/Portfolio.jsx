@@ -29,7 +29,7 @@ export default function Portfolio() {
               </a>
             </div>
         </div>
-        {/* <div className="row customRow">
+        <div className="row customRow">
           <div className="col-5">
 
           </div>
@@ -37,7 +37,7 @@ export default function Portfolio() {
           <div className="col-5">
 
           </div>
-        </div> */}
+        </div>
 
         <div className="row customRow">
         <div className="col-5 image-container">
@@ -56,6 +56,17 @@ export default function Portfolio() {
               </a>
             </div>
         </div>
+        <div className="row customRow">
+          <div className="col-5">
+
+          </div>
+          <div className="col-2"></div>
+          <div className="col-5">
+            <a  href="https://tech-blog-ch14.onrender.com/" target="_blank" rel="noopener noreferrer">
+              <h4 className="projectLink web">check Tech Blog WEB</h4>
+            </a>
+          </div>
+        </div>
 
         <div className="row customRow">
             <div className="col-5 image-container">
@@ -73,6 +84,17 @@ export default function Portfolio() {
               <h4 className="projectLink">Social-Network-API GitHub repo</h4>
               </a>
             </div>
+        </div>
+        <div className="row customRow">
+          <div className="col-5">
+            <a  href="https://marynamartseniuk.github.io/Garden-Scheduler-pr01/" target="_blank" rel="noopener noreferrer">
+              <h4 className="projectLink web">check Easy Gardening WEB</h4>
+            </a>
+          </div>
+          <div className="col-2"></div>
+          <div className="col-5">
+
+          </div>
         </div>
       </div>
     );

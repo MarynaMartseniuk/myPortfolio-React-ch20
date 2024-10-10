@@ -1,15 +1,17 @@
 import { Link, useLocation } from 'react-router-dom';
+import '../App.css';
+import './NavTabs.css';
 
 function NavTabs() {
   const currentPage = useLocation().pathname;
 
   return (
-    <div>
+    <div id="navTabsContainer">
       <div>
-        <h2>Maryna Martseniuk</h2>
+        <h1 id="title" >Maryna Martseniuk</h1>
       </div>
     
-      <ul className="nav nav-tabs">
+      <ul className="nav nav-tabs tabs">
         <li className="nav-item">
           <Link 
           to="/"

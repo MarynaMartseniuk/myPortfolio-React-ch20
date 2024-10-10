@@ -15,6 +15,10 @@ spin {
     border-radius: 5px;
 }
 
+#formContainer {
+    margin-bottom: 40px;
+}
+
 #tipContainer {
     padding-top: 80px;
 }
