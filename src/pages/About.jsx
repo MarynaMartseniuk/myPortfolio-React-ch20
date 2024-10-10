@@ -4,7 +4,8 @@ import './About.css';
 
 export default function About() {
     return (
-      <div className="container text-center pageContainer">
+      <div className="container text-center">
+        <h1 className="pageHeader">About Me</h1>
         <div className="row">
             <div id="photoContainer" className="col-4">
               <div id="photoDiv">
@@ -20,16 +21,15 @@ export default function About() {
             </div>
             <div className="col-1"></div>
             <div id="bioContainer" className="col-7">
-              <h1 id="bioHeader">About Me</h1>
               <p className="bio">
                 My name is Maryna Martseniuk. I have been lived in Sandy, UT since 2017.
-                I have a family (husband and son) and 3 parrots. Outdoors, traveling is the great way for us to enjoy family moments.
+                I have a family (husband and son) and 3 parrots. Outdoors and traveling is the great way for us to enjoy family moments.
               </p>
               <p className="bio">
                 I am currenly working for a medical company. Production area. Position held is a Process Control Operator. However I like coding and have a strong wish to try myself in this area.
               </p>
               <p className="bio">
-                <ul>
+                <ul id="bioEducation">
                   <li>
                     Completed Web Coding Bootcamp, University of Utah - 2024
                   </li>
