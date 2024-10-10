@@ -1,22 +1,24 @@
 import myResume from '../utils/images/resume.jpg';
 import myResumeFile from '../utils/resumeMarynaM.pdf'
 import '../App.css';
+import './Resume.css'
 
 export default function Resume() {
     return (
-      <div className="container text-center pageContainer">
+      <div className="container text-center">
+        <h1 className="pageHeader">Resume</h1>
         <div class="row">
 
-          <div id="myResume" class="col-4">
-            <img src={myResume} width="80%"/>
+          <div id="myResume" class="col-3">
+            <img src={myResume} id="resumeImg"/>
             <a href={ myResumeFile } download>
-              <h3>download my Resume</h3>
+              <h4 id="resumeLink">download my Resume</h4>
             </a>
           </div>
-
+          <div class="col-1"></div>
           <div id="mySkills" class="col-8">
-          <ul>
-              <li id="frontEnd">
+            <div>
+              <div id="frontEnd">
                   <h3>Frontend Development</h3>
                   <div>
                     <p>1. HTML5/CSS3 Proficiency</p>
@@ -51,8 +53,8 @@ export default function Resume() {
                       </li>
                     </ul>
                   </div>
-              </li>
-              <li id="backEnd">
+              </div>
+              <div id="backEnd">
                   <h3>Backend Development</h3>
                   <div>
                     <p>4. Node.js Proficiency</p>
@@ -76,8 +78,8 @@ export default function Resume() {
                       </li>
                     </ul>
                   </div>
-              </li>       
-              <li id="fullStack">
+              </div>       
+              <div id="fullStack">
                   <h3>Full-Stack Development</h3>
                   <div>
                     <p>6. Full-Stack Application Development</p>
@@ -90,8 +92,8 @@ export default function Resume() {
                       </li>
                     </ul>
                   </div>
-              </li>
-              <li id="Git" >
+              </div>
+              <div id="Git" >
                   <h3>Version Control and Collaboration</h3>
                   <div>
                     <p>7. Version Control with Git</p>
@@ -104,8 +106,8 @@ export default function Resume() {
                       </li>
                     </ul>
                   </div>
-              </li>
-              <li id="TestDebug" >
+              </div>
+              <div id="TestDebug" >
                   <h3>Testing and Debugging</h3>
                   <div>
                     <p>8. Testing Frameworks</p>
@@ -118,8 +120,8 @@ export default function Resume() {
                       </li>
                     </ul>
                   </div>
-              </li>
-              <li id="otherSkills">
+              </div>
+              <div id="otherSkills">
                   <h3>Other Skills</h3>
                   <div>
                     <p>9. Responsive Web Design</p>
@@ -140,8 +142,8 @@ export default function Resume() {
                       </li>
                     </ul>
                   </div>
-              </li> 
-            </ul>
+              </div> 
+            </div>
           </div>
 
         </div>
