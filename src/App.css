@@ -18,13 +18,12 @@ body, html {
 }
 
 .mainContainer {
-    /* background-color: var(--lGreen); */
     width: 90%;
     display: flex;
     align-self: center;
     justify-content: space-around;
-    /* border: solid 1px; */
     margin: 0px !important;
+    padding-top: 40px;
 }
 
 .pageContainer {
