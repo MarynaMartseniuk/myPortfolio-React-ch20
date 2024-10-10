@@ -42,7 +42,7 @@
     background-color: var(--lBg);
 }
 
-#bioHeader {
-    font-weight: 700;
-    color: var(--orange);
+#bioEducation {
+    font-weight: 500;
+    font-style: italic;
 }

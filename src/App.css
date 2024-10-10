@@ -5,7 +5,7 @@
     --orange: orange;
     --dBrown: rgb(105, 72, 72);
     --Grey: rgb(136, 135, 135);
-    --Blue: rgb(60, 147, 247);
+    --aqua: rgb(32, 122, 122);
 }
 
 body, html {
@@ -32,4 +32,9 @@ body, html {
     justify-content: space-around;
     margin: 0;
     padding: 0;
+}
+
+.pageHeader {
+    font-weight: 700;
+    color: var(--orange);
 }

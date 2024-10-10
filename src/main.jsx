@@ -32,6 +32,10 @@ const router = createBrowserRouter([
         path: '/Resume',
         element: <Resume />,
       },
+      // {
+      //   path: '/DeploymentUnavailable',
+      //   element: <DeploymentUnavailable />,
+      // }
     ],
   },
 ]);
