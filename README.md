@@ -5,10 +5,14 @@ A single-page application portfolio for a web developer using React.
 Being a web developer means being part of a community. I’ll need a place to share my projects not only if I'm applying for jobs or working as a freelancer but also so that I can share my work with fellow developers and collaborate on future projects.
 
 ## Description
-### Motivation to create this App was 
-### I built this App because 
-### This App hepls 
-### This project was interesting and usefull for me because, as a begginer, I learned how to 
+### Motivation to create this App was a wish to learn how to build single-page App.
+### I built this App because it had some new coding challanges needed to be solved. For me, as for a begginer, it was importent to get a new skills and got understanding that "I can do it!".
+### This App hepls me to reprisent myself to a future employers. It shows my main skills and knowledge in different dev areas.
+### This project was interesting and usefull for me because, as a begginer, I learned:
+1. how to build a single-page application using REACT;
+2. basics of REACT;
+3. cons and pros of REACT;
+4. how to render on Netlify.
 
 ## Table of Contents
 
@@ -21,24 +25,21 @@ Being a web developer means being part of a community. I’ll need a place to sh
 
 ## Installation
 
-### To use this App you need to 
+![the App will look like this:](https://github.com/MarynaMartseniuk/myPortfolio-React-ch20/blob/main/src/utils/images/home.jpg)
+
+to use the App simply follow this link: https://clever-heliotrope-b4533d.netlify.app/
 
 ## Usage
-NEEDS UPDATES!!!!!!!!
-1. in the Command Line/GitBush/Terminal go to the folder with the code;
-2. login into pSQL and run "\i db/schema.sql". After this done, logout of pSQL;
-3. run "npm install" to buid the App;
-4. run "node server.js" to create/connect db models;
-5. run "node seeds/index.js" to seed database;
-6. run "node server.js" to start the App. 
-
-### run the App will look like this:
-![run the App will look like this:](https://clever-heliotrope-b4533d.netlify.app/)
-https://clever-heliotrope-b4533d.netlify.app/
-
-### something will look like this:
-![generatedReadme.md file will look like this:](https://)
-
+1. click on the link above and you will be redirected to the landing page;
+2. by clicking on the links on the NavTabs you will be show different components of the Web (About, Portfolio, Contact, Resume);
+3. About page - a recent photo of the developer and a short bio;
+4. Portfolio page - six of the developer’s applications with links to both the deployed applications and the corresponding GitHub repositories;
+   ![Portfolio page:](https://github.com/MarynaMartseniuk/myPortfolio-React-ch20/blob/main/src/utils/images/portfolio.jpg)
+6. Cotact page - a form with fields for a name, an email address, and a message to contact the developer;
+   ![Contact page:](https://github.com/MarynaMartseniuk/myPortfolio-React-ch20/blob/main/src/utils/images/contact.jpg)
+8. Resume page - a link to a downloadable resume and a list of the developer’s proficiencies;
+   ![Resume page:](https://github.com/MarynaMartseniuk/myPortfolio-React-ch20/blob/main/src/utils/images/resumePg.jpg)
+10. Footer - links to the developer’s GitHub and LinkedIn profiles, email and phone for contact.
 
 ## Credits
 1. source of code: UofU bootcamp, module 20, activities 16, 23
